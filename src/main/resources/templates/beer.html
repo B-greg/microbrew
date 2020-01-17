@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul>
+
+    <h1 th:text="${beer.name}"></h1>
+    <p th:text="'id: ' + ${beer.id}"/>
+    <p th:text="'name: ' + ${beer.name}"/>
+    <p th:text="'brand: ' + ${beer.brand}"/>
+    <p th:text="'created_at: ' + ${beer.createdAt}"/>
+    <p th:text="'updated_at: ' + ${beer.updatedAt}"/>
+    <a href="/beers/admin/">Home</a>
+</ul>
+
+</body>
+</html>

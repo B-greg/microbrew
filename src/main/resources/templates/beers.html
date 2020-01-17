@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Beers</title>
+</head>
+<body>
+<a href="/beers/admin/create">Create</a>
+<table style="width:100%">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Brand</th>
+        <th>CreatedAt</th>
+        <th>UpdatedAT</th>
+    </tr>
+    <tr th:each="beer : ${beers}">
+        <td th:text="${beer.id}"></td>
+        <td th:text="${beer.name}"></td>
+        <td th:text="${beer.brand}"></td>
+        <td th:text="${beer.createdAt}"></td>
+        <td th:text="${beer.updatedAt}"></td>
+    </tr>
+</table>
+
+
+</body>
+</html>

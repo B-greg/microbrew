@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS Beer (
+     id SERIAL PRIMARY KEY NOT NULL,
+    "name" VARCHAR (50) NOT NULL,
+    brand VARCHAR (50),
+    created_at TIMESTAMP NOT NULL,
+    updated_at TIMESTAMP NOT NULL
+);

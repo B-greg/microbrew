@@ -24,6 +24,9 @@ public class Beer {
     @Getter @Setter @NonNull
     private Date updatedAt;
 
+    public Beer() {
+    }
+
     public Beer(@NonNull Long id, @NonNull String name, String brand, @NonNull Date createdAt, @NonNull Date updatedAt) {
         this.id = id;
         this.name = name;

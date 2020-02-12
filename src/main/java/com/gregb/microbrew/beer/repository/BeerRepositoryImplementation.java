@@ -88,7 +88,7 @@ public class BeerRepositoryImplementation implements BeerRepository {
 
     @Override
     public List<Beer> getBeer() {
-        String query = "SELECT * FROM Beer";
+        String query = "SELECT * FROM Beer ORDER BY id ASC";
         List<Beer> beers = jdbcTemplate.query(
                 query, (resultSet, i) -> BeerDaoMapper.toBeer(resultSet)
         );
